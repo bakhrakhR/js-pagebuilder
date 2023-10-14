@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page builder</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2 class="section--name">build layout</h2>
+            <p class="section--description">it's your simple layout builder</p>
+            <form id="form">
+                <div class="form-inputs">
+                    <!-- div block -->
+                    <button class="accordion">create container</button>
+                    <div class="panel">
+                        <label for="size-box">create container</label>
+                        <div class="size-box" name="size-box">
+                            <div class="form-control">
+                                <label for="width-input">width</label>
+                                <div class="width-inputs-inner">
+                                    <input type="number" id="width-input" name="width-input">
+                                    <select class="select" id="select-width">
+                                        <option id="op1">px</option>
+                                        <option id="op2">%</option>
+                                        <option id="op3">em</option>
+                                        <option id="op4">rem</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-control">
+                                <label for="height-input">height</label>
+                                <div class="width-inputs-inner">
+                                    <input type="number" id="height-input" name="height-input">
+                                    <select class="select" id="select-height">
+                                        <option id="op1">px</option>
+                                        <option id="op2">%</option>
+                                        <option id="op3">em</option>
+                                        <option id="op4">rem</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-control">
+                                <label for="color-input">color</label>
+                                <input type="color" id="color-input" name="color-input" value="#569930">
+                            </div>
+
+                            <div class="direction-box">
+                                <label for="direction">direction:</label><br>
+                                <input type="radio" name="direction" id="direction-row" checked>
+                                <label for="direction-row">row</label><br>
+                                <input type="radio" name="direction" id="direction-column">
+                                <label for="direction-column">column</label><br>
+                            </div>
+
+                            <div class="form-control">
+                                <label for="space-input">space</label>
+                                <div class="space-inputs-inner">
+                                    <input type="number" id="space-input" name="height-input">
+                                    <select class="select" id="select-space-space">
+                                        <option id="op1">px</option>
+                                        <option id="op2">%</option>
+                                        <option id="op3">em</option>
+                                        <option id="op4">rem</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- border radius -->
+                    <button class="accordion">set the borders</button>
+                    <div class="panel">
+                        <label for="borders">create your borders</label>
+
+                        <div class="border-box">
+                            <div class="wrap-border">
+                                <div class="form-control">
+                                    <label for="width-border-input">width</label>
+                                    <div class="width-inputs-inner">
+                                        <input type="number" id="width-border-input" name="width-border-input">
+                                        <select class="select" id="select-width-input-u">
+                                            <option id="op1">px</option>
+                                            <option id="op2">%</option>
+                                            <option id="op3">em</option>
+                                            <option id="op4">rem</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="color-input">color</label>
+                                    <input type="color" id="color-input-border" name="color-input" value="#000000">
+                                </div>
+                            </div>
+
+
+                            <div class="border-radius">
+                                <label for="radius">set border radius</label>
+
+                                <div class="form-control">
+                                    <label for="l-b-radius-input">left bottom</label>
+                                    <div class="width-inputs-inner">
+                                        <input type="number" id="l-b-radius-input" name="l-b-radius-input">
+                                        <select class="select" id="select-width-radius1">
+                                            <option id="op1">px</option>
+                                            <option id="op2">%</option>
+                                            <option id="op3">em</option>
+                                            <option id="op4">rem</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="l-t-radius-input">left top</label>
+                                    <div class="width-inputs-inner">
+                                        <input type="number" id="l-t-radius-input" name="l-t-radius-input">
+                                        <select class="select" id="select-width-radius-2">
+                                            <option id="op1">px</option>
+                                            <option id="op2">%</option>
+                                            <option id="op3">em</option>
+                                            <option id="op4">rem</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="r-b-radius-input">right bottom</label>
+                                    <div class="width-inputs-inner">
+                                        <input type="number" id="r-b-radius-input" name="r-b-radius-input">
+                                        <select class="select" id="select-width-radius-3">
+                                            <option id="op1">px</option>
+                                            <option id="op2">%</option>
+                                            <option id="op3">em</option>
+                                            <option id="op4">rem</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="r-t-radius-input">right top</label>
+                                    <div class="width-inputs-inner">
+                                        <input type="number" id="r-t-radius-input" name="r-t-radius-input">
+                                        <select class="select" id="select-width-radius-4">
+                                            <option id="op1">px</option>
+                                            <option id="op2">%</option>
+                                            <option id="op3">em</option>
+                                            <option id="op4">rem</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- text box -->
+                    <button class="accordion">add text</button>
+                    <div class="panel">
+
+                        <label for="text-box">create text</label>
+                        <div class="text-box" name="text-box">
+                            <div class="form-control">
+                                <label for="text-input">text</label>
+                                <textarea type="text" id="text-input" name="text-input"
+                                    placeholder="your text"></textarea>
+                            </div>
+                            <div class="form-control-text">
+                                <div class="form-control">
+                                    <label for="fontSize-input">font size</label>
+                                    <div class="fontSize-inputs-inner">
+                                        <input type="number" id="fontSize-input" name="fontSize-input" placeholder="14">
+                                        <select class="select" id="select-fontSize">
+                                            <option id="op1">px</option>
+                                            <option id="op2">rem</option>
+                                            <option id="op3">em</option>
+                                            <option id="op4">pt</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-control">
+                                    <label for="color-input">color</label>
+                                    <input type="color" id="color-input-text" name="color-input" value="#000000">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="button-container">
+                        <button class="submit-button" type="submit">send</button>
+                    </div>
+
+                </div>
+            </form>
+
+            <div class="buttons">
+                <button id="save" class="btn">save</button>
+                <button id="load" class="btn">load</button>
+                <button id="clear" class="btn">clear</button>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="content-container"></div>
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
